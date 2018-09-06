@@ -1,4 +1,6 @@
 ﻿Imports System
+Imports System.Web.UI
+Imports DevExpress.Web
 
 Namespace CS.Models
     Public Class BuiltInValidationData
@@ -10,11 +12,11 @@ Namespace CS.Models
 
     Public Class BuiltInValidationHelper
 
-        Private Shared nameValidationSettings_Renamed As ValidationSettings
-        Public Shared ReadOnly Property NameValidationSettings() As ValidationSettings
+        Private Shared nameValidationSettings_Renamed As DevExpress.Web.ValidationSettings
+        Public Shared ReadOnly Property NameValidationSettings() As DevExpress.Web.ValidationSettings
             Get
                 If nameValidationSettings_Renamed Is Nothing Then
-                    nameValidationSettings_Renamed = ValidationSettings.CreateValidationSettings(Nothing)
+                    nameValidationSettings_Renamed = DevExpress.Web.ValidationSettings.CreateValidationSettings(Nothing)
                     nameValidationSettings_Renamed.Display = Display.Dynamic
                     nameValidationSettings_Renamed.ErrorDisplayMode = ErrorDisplayMode.ImageWithText
                     nameValidationSettings_Renamed.RequiredField.IsRequired = True
@@ -25,11 +27,11 @@ Namespace CS.Models
             End Get
         End Property
 
-        Private Shared ageValidationSettings_Renamed As ValidationSettings
-        Public Shared ReadOnly Property AgeValidationSettings() As ValidationSettings
+        Private Shared ageValidationSettings_Renamed As DevExpress.Web.ValidationSettings
+        Public Shared ReadOnly Property AgeValidationSettings() As DevExpress.Web.ValidationSettings
             Get
                 If ageValidationSettings_Renamed Is Nothing Then
-                    ageValidationSettings_Renamed = ValidationSettings.CreateValidationSettings(Nothing)
+                    ageValidationSettings_Renamed = DevExpress.Web.ValidationSettings.CreateValidationSettings(Nothing)
                     ageValidationSettings_Renamed.Display = Display.Dynamic
                     ageValidationSettings_Renamed.ErrorDisplayMode = ErrorDisplayMode.ImageWithText
                     ageValidationSettings_Renamed.ErrorText = "Must be between 18 and 100"
@@ -39,11 +41,11 @@ Namespace CS.Models
             End Get
         End Property
 
-        Private Shared emailValidationSettings_Renamed As ValidationSettings
-        Public Shared ReadOnly Property EmailValidationSettings() As ValidationSettings
+        Private Shared emailValidationSettings_Renamed As DevExpress.Web.ValidationSettings
+        Public Shared ReadOnly Property EmailValidationSettings() As DevExpress.Web.ValidationSettings
             Get
                 If emailValidationSettings_Renamed Is Nothing Then
-                    emailValidationSettings_Renamed = ValidationSettings.CreateValidationSettings(Nothing)
+                    emailValidationSettings_Renamed = DevExpress.Web.ValidationSettings.CreateValidationSettings(Nothing)
                     emailValidationSettings_Renamed.Display = Display.Dynamic
                     emailValidationSettings_Renamed.ErrorDisplayMode = ErrorDisplayMode.ImageWithText
                     emailValidationSettings_Renamed.RequiredField.IsRequired = True
@@ -57,11 +59,11 @@ Namespace CS.Models
             End Get
         End Property
 
-        Private Shared arrivalDateValidationSettings_Renamed As ValidationSettings
-        Public Shared ReadOnly Property ArrivalDateValidationSettings() As ValidationSettings
+        Private Shared arrivalDateValidationSettings_Renamed As DevExpress.Web.ValidationSettings
+        Public Shared ReadOnly Property ArrivalDateValidationSettings() As DevExpress.Web.ValidationSettings
             Get
                 If arrivalDateValidationSettings_Renamed Is Nothing Then
-                    arrivalDateValidationSettings_Renamed = ValidationSettings.CreateValidationSettings(Nothing)
+                    arrivalDateValidationSettings_Renamed = DevExpress.Web.ValidationSettings.CreateValidationSettings(Nothing)
                     arrivalDateValidationSettings_Renamed.Display = Display.Dynamic
                     arrivalDateValidationSettings_Renamed.ErrorDisplayMode = ErrorDisplayMode.ImageWithText
                     arrivalDateValidationSettings_Renamed.ErrorText = "Arrival date is required"

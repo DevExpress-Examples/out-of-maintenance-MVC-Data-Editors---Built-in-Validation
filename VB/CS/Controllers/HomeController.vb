@@ -1,5 +1,7 @@
 ﻿Imports System
+Imports System.Web.Mvc
 Imports CS.Models
+Imports DevExpress.Web.Mvc
 
 Namespace CS.Controllers
     Partial Public Class HomeController
