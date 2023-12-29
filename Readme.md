@@ -1,13 +1,5 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/146888015/18.1.5%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T830532)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 
 # MVC Data Editors - How to perform built-in validation
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/146888015/)**
-<!-- run online end -->
 
 This example illustrates the built-in flexibility and efficiency of our MVC data validation engine, allowing you to easily implement different validation scenarios. Validation settings can be customized for a given editor by using the editor's  [ValidationSettings](http://help.devexpress.com/#AspNet/clsDevExpressWebASPxEditorsValidationSettingstopic)  property.
 
